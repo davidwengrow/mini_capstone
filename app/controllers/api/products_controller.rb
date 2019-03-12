@@ -34,7 +34,8 @@ class Api::ProductsController < ApplicationController
        # image_url: params[:image_url],
         description: params[:description],
           instock: params[:instock],
-            supplier_id: params[:supplier_id])
+            supplier_id: params[:supplier_id],
+            user_id: current_user.id)
 
 
 
